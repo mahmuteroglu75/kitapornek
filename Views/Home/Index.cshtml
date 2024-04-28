@@ -1,0 +1,21 @@
+﻿@model MvcProje.Models.Kitap
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kitap Bilgisi</title>
+</head>
+<body>
+    <div>
+        <h1>Kitap Bilgisi</h1>
+        <p>Kitap Adı: @Model.KitapAdi</p>
+        <p>Yazar Adı: @Model.YazarAdi</p>
+        <p>Yayınlanma Tarihi: @Model.YayinlanmaTarihi.ToShortDateString()</p>
+        <p>Türü: @Model.Turu</p>
+        <p>Sayfa Sayısı: @Model.SayfaSayisi</p>
+        <p>Fiyat: @Model.Fiyat.ToString("C")</p>
+    </div>
+</body>
+</html>
